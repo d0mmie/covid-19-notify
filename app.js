@@ -4,6 +4,8 @@ import qs from 'qs'
 
 moment.locale('th')
 
+console.log('APP STARTED')
+
 const defaultSleepTime = parseInt(process.env.DEFAULT_SLEEP_TIME, 10)
 const errorSleepTime = parseInt(process.env.ERROR_SLEEP_TIME, 10)
 
