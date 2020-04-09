@@ -4,8 +4,8 @@ import qs from 'qs'
 
 moment.locale('th')
 
-const defaultSleepTime = 12 * 60 * 1000
-const errorSleepTime = 2 * 60 * 1000
+const defaultSleepTime = parseInt(process.env.DEFAULT_SLEEP_TIME, 10)
+const errorSleepTime = parseInt(process.env.ERROR_SLEEP_TIME, 10)
 
 const sleep = (ms) => new Promise((resolve) => {
     setTimeout(() => {
