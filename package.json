@@ -1,0 +1,27 @@
+{
+  "name": "covid-19-notify",
+  "version": "1.0.0",
+  "description": "COVID-19 thailand situation update line notification push.",
+  "main": "app.js",
+  "repository": "https://github.com/d0mmie/covid-19-notify.git",
+  "author": "d0mmie <st234@outlook.co.th>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon -x dotenv -- babel-node ./app.js",
+    "start": "babel-node ./app.js"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^3.1.0",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "axios": "^0.19.2",
+    "moment": "^2.24.0",
+    "qs": "^6.9.3"
+  }
+}
